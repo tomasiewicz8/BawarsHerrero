@@ -82,5 +82,8 @@ section {
 
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 767px) {
-    /* Ajustes específicos para dispositivos móviles aquí */
+    /* Ajuste.logo img {
+    width: 50px;
+    height: auto;
+}
 }
