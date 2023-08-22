@@ -86,16 +86,10 @@ section {
     width: 20px;
     height: auto;
 }
-
 nav .btn {
-    background-color: hsl(0, 0%, 100%);
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 8px 16px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 1px;
-    border-radius: 25px;
-    text-decoration: none;
+    font-size: 20px; /* Reduce el tamaño de fuente */
+    padding: 5px 10px; /* Reduce el espaciado interno */
+    border-radius: 15px; /* Ajusta el radio del borde para que sea más suave en botones más pequeños */
 }
+
 }
