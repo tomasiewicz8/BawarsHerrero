@@ -22,7 +22,7 @@ header {
     height: auto;
 }
 
-nav .btn {
+header nav a {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
     border: none;
@@ -34,43 +34,17 @@ nav .btn {
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #25fa00;
+header nav a:hover {
+    background-color: #66ff4b;
 }
 
 /* Portada */
 .portada {
-    display: flex;
-    flex-direction: column; /* Cambio para disposición vertical en móviles */
-    align-items: center; /* Centrar verticalmente en móviles */
     background-image: url('https://i.postimg.cc/zGH281gM/16113051144409.jpg');
     background-size: cover;
     background-position: center;
-    width: 100%; /* Ocupa el mismo ancho que el encabezado */
-    height: 400px; /* Reducción de altura para móviles */
-}
-
-#productosVenta {
-    display: flex;
-    flex-wrap: wrap; /* Cambio para que los productos se ajusten en móviles */
-    justify-content: center; /* Centrar horizontalmente */
-}
-
-.portada a {
-    text-decoration: none;
-}
-
-.portada img {
-    width: 100px; /* Reducción de tamaño para móviles */
-    height: 100px; /* Reducción de tamaño para móviles */
-    border-radius: 50%;
-    margin: 5px; /* Mayor margen para separar productos en móviles */
-    transition: transform 0.3s;
-}
-
-.portada img:hover {
-    transform: scale(1.2); /* Ajuste de escala para móviles */
-    border: 2px solid #25fa00;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /* Secciones */
@@ -79,17 +53,3 @@ section {
 }
 
 /* Otros estilos específicos según tus necesidades */
-
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 767px) {
-.logo img {
-    width: 20px;
-    height: auto;
-}
-nav .btn {
-    font-size: 20px; /* Reduce el tamaño de fuente */
-    padding: 5px 10px; /* Reduce el espaciado interno */
-    border-radius: 15px; /* Ajusta el radio del borde para que sea más suave en botones más pequeños */
-}
-
-}
