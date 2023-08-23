@@ -44,7 +44,12 @@ header nav a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 10vh;
+    min-height: 100vh;
+}
+
+main nav a{
+    width: 200px;
+    height: auto;
 }
 
 /* Secciones */
