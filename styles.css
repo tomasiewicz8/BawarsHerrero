@@ -47,11 +47,6 @@ header nav a:hover {
     min-height: 100vh;
 }
 
-main nav a{
-    width: 20px;
-    height: auto;
-}
-
 /* Secciones */
 section {
     padding: 20px;
