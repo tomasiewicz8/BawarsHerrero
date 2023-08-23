@@ -23,7 +23,7 @@ header {
 }
 
 header nav a {
-    background-color: hsl(239, 84%, 42%);
+    background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
     border: none;
     padding: 8px 16px;
