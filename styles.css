@@ -65,6 +65,11 @@ section {
 
 @media (max-width: 768px) {
 
+    .logo img {
+        width: 25px;
+        height: auto;
+    }
+
     .logo {
         display: none; /* Ocultar todos los logos */
     }
