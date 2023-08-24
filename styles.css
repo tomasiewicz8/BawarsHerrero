@@ -76,7 +76,6 @@ section {
     .logo img {
         width: 25px;
         height: auto;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
 
     .logo {
@@ -98,6 +97,12 @@ section {
         font-size: 14px;
         border-radius: 25px;
         text-decoration: none;
+    }
+
+    #portico img {
+        max-width: 25%;
+        height: auto;
+        margin-top: 5px; /* Agrega un margen superior para separar la imagen del párrafo */
     }
 
     section {
