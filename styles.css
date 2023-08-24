@@ -94,6 +94,11 @@ section {
         border-radius: 25px;
         text-decoration: none;
     }
+
+    section {
+        padding: none;
+    }
+
 }
 
 /* Otros estilos específicos según tus necesidades */
