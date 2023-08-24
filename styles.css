@@ -64,6 +64,12 @@ section {
 }
 
 @media (max-width: 768px) {
+
+    .logo:first-child,
+    .logo:last-child {
+        display: block; /* Mostrar solo el primer y último logo */
+    }
+
     header nav a {
         background-color: hsl(0, 100%, 49%);
         color: rgb(0, 0, 0);
