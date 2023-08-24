@@ -68,9 +68,9 @@ section {
     .portada {
         background-size: 100% auto;
         background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 20vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 30vh;
         background-size: contain; /* Cambia el tamaño de la imagen para que se ajuste al contenedor */
     }
 
