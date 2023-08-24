@@ -99,6 +99,11 @@ section {
         text-decoration: none;
     }
 
+    #portico {
+        display: flex;
+        align-items: center;
+    }
+
     #portico img {
         max-width: 25%;
         height: auto;
