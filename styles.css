@@ -65,6 +65,10 @@ section {
 
 @media (max-width: 768px) {
 
+    .portada {
+        background-size: contain; /* Cambia el tamaño de la imagen para que se ajuste al contenedor */
+    }
+
     .logo img {
         width: 25px;
         height: auto;
