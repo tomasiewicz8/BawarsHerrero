@@ -47,7 +47,7 @@ header nav a:hover {
     min-height: 100vh;
 }
 
-.productosVenta {
+.productosVenta a{
     width: 50%;
     height: auto;
 }
