@@ -58,6 +58,17 @@ header nav a:hover {
     border-color: #66ff4b;
 }
 
+#portico {
+    display: flex;
+    align-items: center;
+}
+
+#portico img {
+    max-width: 25%;
+    height: auto;
+    margin-top: 5px; /* Agrega un margen superior para separar la imagen del párrafo */
+}
+
 /* Secciones */
 section {
     padding: 21px;
@@ -97,17 +108,6 @@ section {
         font-size: 14px;
         border-radius: 25px;
         text-decoration: none;
-    }
-
-    #portico {
-        display: flex;
-        align-items: center;
-    }
-
-    #portico img {
-        max-width: 25%;
-        height: auto;
-        margin-top: 5px; /* Agrega un margen superior para separar la imagen del párrafo */
     }
 
     section {
