@@ -63,4 +63,18 @@ section {
     padding: 21px;
 }
 
+@media (max-width: 768px) {
+    header nav a {
+        background-color: hsl(0, 100%, 49%);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 8px 16px;
+        margin: 0 5px;
+        cursor: pointer;
+        font-size: 32px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+}
+
 /* Otros estilos específicos según tus necesidades */
