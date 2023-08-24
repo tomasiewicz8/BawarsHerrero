@@ -60,13 +60,13 @@ header nav a:hover {
 
 #portico {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 
 #portico img {
     max-width: 25%;
     height: auto;
-    margin-top: 5px; /* Agrega un margen superior para separar la imagen del párrafo */
+    margin: 10px; /* Agrega un margen superior para separar la imagen del párrafo */
 }
 
 /* Secciones */
