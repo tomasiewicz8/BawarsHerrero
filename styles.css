@@ -34,7 +34,7 @@ header nav a {
     text-decoration: none;
 }
 
-header nav a:hover {
+a:hover {
     background-color: #66ff4b;
 }
 
