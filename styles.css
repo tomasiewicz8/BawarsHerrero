@@ -47,6 +47,11 @@ header nav a:hover {
     min-height: 100vh;
 }
 
+.productosVenta {
+    width: 50%;
+    height: auto;
+}
+
 /* Secciones */
 section {
     padding: 21px;
