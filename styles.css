@@ -96,7 +96,8 @@ section {
     }
 
     section {
-        padding: none;
+        padding: 14px; /* Reducción del padding en dispositivos móviles */
+        margin: 5px 0; /* Reducción del margen vertical en dispositivos móviles */
     }
 
 }
