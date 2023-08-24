@@ -66,6 +66,7 @@ section {
 @media (max-width: 768px) {
 
     .portada {
+        background-size: 100% auto;
         background-size: contain; /* Cambia el tamaño de la imagen para que se ajuste al contenedor */
     }
 
@@ -96,8 +97,8 @@ section {
     }
 
     section {
-        padding: 1px; /* Reducción del padding en dispositivos móviles */
-        margin: 1px 0; /* Reducción del margen vertical en dispositivos móviles */
+        padding: 14px; /* Reducción del padding en dispositivos móviles */
+        margin: 5px 0; /* Reducción del margen vertical en dispositivos móviles */
     }
 
 }
