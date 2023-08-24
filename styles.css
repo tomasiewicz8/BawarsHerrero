@@ -101,8 +101,8 @@ section {
     }
 
     section {
-        padding: 14px; /* Reducción del padding en dispositivos móviles */
-        margin: 5px 0; /* Reducción del margen vertical en dispositivos móviles */
+        padding: 1px; /* Reducción del padding en dispositivos móviles */
+        margin: 1px 0; /* Reducción del margen vertical en dispositivos móviles */
     }
 
 }
