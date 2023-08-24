@@ -66,12 +66,11 @@ section {
 @media (max-width: 768px) {
 
     .portada {
-        background-size: 100% auto;
+        background-image: url('https://i.postimg.cc/LsmJz31y/16113051144409-recortado.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        min-height: 30vh;
-        background-size: contain; /* Cambia el tamaño de la imagen para que se ajuste al contenedor */
+        min-height: 100vh;
     }
 
     .logo img {
