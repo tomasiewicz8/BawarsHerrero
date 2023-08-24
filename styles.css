@@ -53,6 +53,11 @@ header nav a:hover {
     margin: 2%;
 }
 
+#productosVenta img:hover {
+    border-radius: 2px;
+    border-color: #66ff4b;
+}
+
 /* Secciones */
 section {
     padding: 21px;
