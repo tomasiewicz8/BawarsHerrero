@@ -75,10 +75,10 @@ section {
     }
 
     header nav a {
-        background-color: hsl(0, 100%, 49%);
+        background-color: hsl(0, 0%, 100%);
         color: rgb(0, 0, 0);
         border: none;
-        padding: 8px 16px;
+        padding: 2px 4px;
         margin: 0 5px;
         cursor: pointer;
         font-size: 12px;
