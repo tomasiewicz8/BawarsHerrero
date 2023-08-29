@@ -1,4 +1,8 @@
 /* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,11 +55,14 @@ header nav a:hover {
     width: 20%;
     height: auto;
     margin: 2%;
+    transition: all 0.3s;
+    border-radius: 50%;
 }
 
-.borde :hover {
-    border-radius: 2px;
-    border-color: #66ff4b;
+.borde img:hover {
+    border: 2px solid #66ff4b;
+    transform: scale(2);
+    transform-origin: center center;
 }
 
 #primerEspacio {
@@ -63,11 +70,21 @@ header nav a:hover {
     align-items: left;
 }
 
-#portico img {
-    max-width: 25%;
+#primerEspacio img{
+    width: 650px;
     height: auto;
-    margin: 10px; /* Agrega un margen superior para separar la imagen del párrafo */
 }
+
+#segundoEspacio {
+    display: flex;
+    align-items: left;
+}
+
+#segundoEspacio img{
+    width: 650px;
+    height: auto;
+}
+
 
 /* Secciones */
 section {
