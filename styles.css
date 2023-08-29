@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background: #000000 50%;
     color: white;
 }
 
@@ -39,7 +39,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #66ff4b;
+    background-color: #96fd8d;
 }
 
 /* Portada */
@@ -125,6 +125,26 @@ section {
         font-size: 14px;
         border-radius: 25px;
         text-decoration: none;
+    }
+
+    #primerEspacio {
+        display: block;
+        align-items: left;
+    }
+    
+    #primerEspacio img{
+        width: 350px;
+        height: auto;
+    }
+    
+    #segundoEspacio {
+        display: block;
+        align-items: left;
+    }
+    
+    #segundoEspacio img{
+        width: 350px;
+        height: auto;
     }
 
     section {
