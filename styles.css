@@ -85,6 +85,22 @@ header nav a:hover {
     height: auto;
 }
 
+#redes-sociales {
+    background-color: #1b1b1b;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+#redes-sociales img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+#redes-sociales a{
+    text-decoration: none;
+}
 
 /* Secciones */
 section {
