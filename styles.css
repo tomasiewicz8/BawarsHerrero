@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Caladea, Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #000000 50%;
@@ -36,10 +36,12 @@ header nav a {
     font-size: 32px;
     border-radius: 25px;
     text-decoration: none;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
 }
 
 header nav a:hover {
     background-color: #96fd8d;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 3); /* Agrega una sombra */
 }
 
 /* Portada */
@@ -49,6 +51,11 @@ header nav a:hover {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+}
+
+#productosVenta {
+    margin-top: -130px; /* Margen negativo para desplazarte un poco más arriba */
+    padding-top: 130px;
 }
 
 #productosVenta img{
@@ -67,12 +74,18 @@ header nav a:hover {
 
 #primerEspacio {
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 
 #primerEspacio img{
-    width: 650px;
+    width: 600px;
     height: auto;
+    margin: 20px;
+}
+
+#primerEspacio img:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
 }
 
 #segundoEspacio {
@@ -81,8 +94,14 @@ header nav a:hover {
 }
 
 #segundoEspacio img{
-    width: 650px;
+    width: 600px;
     height: auto;
+    margin: 20px;
+}
+
+#segundoEspacio img:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
 }
 
 #redes-sociales {
