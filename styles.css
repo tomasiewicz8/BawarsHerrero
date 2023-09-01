@@ -61,7 +61,7 @@ header nav a:hover {
 #productosVenta img{
     width: 20%;
     height: auto;
-    margin: 2%;
+    margin: 2.3%;
     transition: all 0.3s;
     border-radius: 50%;
 }
@@ -72,15 +72,66 @@ header nav a:hover {
     transform-origin: center center;
 }
 
+
+#productos .titulillos {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 40.0);
+    font-size: 400%;
+}
+
+#portico {
+    text-align: center;
+    background-color: #1b1b1b;
+    border-radius: 5%;
+    margin: 0%;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+#pulls {
+    display: inline-block;
+    text-align: center;
+    background-color: #1b1b1b;
+    border-radius: 5%;
+    margin: 5%;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+#pullsFijos {
+    text-align: center;
+    background-color: #1b1b1b;
+    border-radius: 5%;
+    margin: 0%;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+#paralelas {
+    display: inline-block;
+    text-align: center;
+    background-color: #1b1b1b;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+}
+
 #primerEspacio {
     display: flex;
     align-items: center;
+    margin-left: 3%;
 }
 
 #primerEspacio img{
     width: 600px;
     height: auto;
     margin: 20px;
+}
+
+#pulls img{
+    width: 585px;
+    height: auto;
+    margin: 20px;
+}
+
+#paralelas {
+    margin: 2.5%;
 }
 
 #primerEspacio img:hover{
@@ -90,7 +141,8 @@ header nav a:hover {
 
 #segundoEspacio {
     display: flex;
-    align-items: left;
+    align-items: center;
+    margin-left: 3%;
 }
 
 #segundoEspacio img{
@@ -102,6 +154,10 @@ header nav a:hover {
 #segundoEspacio img:hover{
     transition: transform 0.5s ease;
     transform: rotate(360deg);
+}
+
+#contacto {
+    background-color: rgb(41, 41, 41);
 }
 
 #redes-sociales {
