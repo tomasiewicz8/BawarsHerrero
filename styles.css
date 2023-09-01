@@ -8,10 +8,10 @@ body {
     margin: 0;
     padding: 0;
     background: #000000 50%;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-/* Encabezado */
+/* Fondo pagina WEB */
 header {
     background-color: #000000;
     color: white;
@@ -21,11 +21,15 @@ header {
     padding: 10px 20px;
 }
 
+/* CABECERA */
+
+/* Logos del encabezado */
 .logo img {
     width: 50px;
     height: auto;
 }
 
+/* botones de direccionamientos a los contenedores */
 header nav a {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
@@ -39,10 +43,13 @@ header nav a {
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
 }
 
+/* hover de los botones */
 header nav a:hover {
     background-color: #96fd8d;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 3); /* Agrega una sombra */
 }
+
+/*PORTADA*/
 
 /* Portada */
 .portada {
@@ -53,11 +60,15 @@ header nav a:hover {
     min-height: 100vh;
 }
 
+/* CONTENEDOR DE PRODUCTOS */
+
+/* direccionamiento al catalogo de productos */
 #productosVenta {
     margin-top: -130px; /* Margen negativo para desplazarte un poco más arriba */
     padding-top: 130px;
 }
 
+/* imagenes de los productos del catalogo */
 #productosVenta img{
     width: 20%;
     height: auto;
@@ -66,19 +77,23 @@ header nav a:hover {
     border-radius: 50%;
 }
 
-.borde img:hover {
+/* hover imagenes de los productos del catalogo */
+#productosVenta img:hover {
     border: 2px solid #66ff4b;
     transform: scale(2);
     transform-origin: center center;
 }
 
+/* INFORMACION DE CADA PRODUCTO */
 
-#productos .titulillos {
+/* titulo */
+#productos .titulo {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 40.0);
     font-size: 400%;
 }
 
+/* producto portico */
 #portico {
     text-align: center;
     background-color: #1b1b1b;
@@ -87,6 +102,7 @@ header nav a:hover {
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* producto pulls */
 #pulls {
     display: inline-block;
     text-align: center;
@@ -96,6 +112,7 @@ header nav a:hover {
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* producto pulls fijos */
 #pullsFijos {
     text-align: center;
     background-color: #1b1b1b;
@@ -104,6 +121,7 @@ header nav a:hover {
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* producto paralelas */
 #paralelas {
     display: inline-block;
     text-align: center;
@@ -112,54 +130,68 @@ header nav a:hover {
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
 }
 
+/* contenedor con los dos primeros productos */
 #primerEspacio {
     display: flex;
     align-items: center;
     margin-left: 3%;
 }
 
+/* imagenes del contenedor con los dos primeros productos */
 #primerEspacio img{
     width: 600px;
     height: auto;
     margin: 20px;
 }
 
+/* hover imagenes del contenedor con los dos primeros productos */
+#primerEspacio img:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
+}
+
+/* especificacion de tamaño por que las imagenes no son iguales */
 #pulls img{
     width: 585px;
     height: auto;
     margin: 20px;
 }
 
+/* especificacion de tamaño por que las imagenes no son iguales */
 #paralelas {
     margin: 2.5%;
 }
 
-#primerEspacio img:hover{
-    transition: transform 0.5s ease;
-    transform: rotate(360deg);
-}
-
+/* contenedor con los productos 3º y 4º */
 #segundoEspacio {
     display: flex;
     align-items: center;
     margin-left: 3%;
 }
 
+/* imagenes del contenedor con los productos 3º y 4º */
 #segundoEspacio img{
     width: 600px;
     height: auto;
     margin: 20px;
 }
 
+/* hover de las imagenes del contenedor con los productos 3º y 4º */
 #segundoEspacio img:hover{
     transition: transform 0.5s ease;
     transform: rotate(360deg);
 }
 
+/* CONTACTO */
+
+/* estilos de la informacion del contacto */
 #contacto {
     background-color: rgb(41, 41, 41);
 }
 
+/* REDES SOCIALES */
+
+/* estilos de la informacion de las redes sociales */
 #redes-sociales {
     background-color: #1b1b1b;
     display: grid;
@@ -167,20 +199,24 @@ header nav a:hover {
     text-align: center;
 }
 
+/* imagenes de la informacion de las redes sociales */
 #redes-sociales img {
     width: 20px;
     height: auto;
     vertical-align: middle;
 }
 
+/* estilo del ancla para la red social */
 #redes-sociales a{
     text-decoration: none;
 }
 
-/* Secciones */
+/* espacio entreel contenido y el contenedor en las "section" */
 section {
     padding: 21px;
 }
+
+/* ESTILO PARA MOVILES */
 
 @media (max-width: 768px) {
 
@@ -218,24 +254,38 @@ section {
         text-decoration: none;
     }
 
+    #productosVenta img{
+        margin: 2.0%;
+    }
+
     #primerEspacio {
         display: block;
         align-items: left;
     }
     
     #primerEspacio img{
-        width: 350px;
+        width: 300px;
         height: auto;
     }
     
     #segundoEspacio {
         display: block;
         align-items: left;
+        margin-left: 0%;
     }
     
     #segundoEspacio img{
-        width: 350px;
+        width: 300px;
         height: auto;
+    }
+
+    #pulls img{
+        margin: 15px;
+    }
+    
+    /* especificacion de tamaño por que las imagenes no son iguales */
+    #paralelas {
+        margin: 2.5%;
     }
 
     section {
