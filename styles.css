@@ -6,27 +6,39 @@
 body {
     font-family: Caladea, Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0%;
     background: #000000 50%;
     color: rgb(255, 255, 255);
 }
 
+/* CABECERA */
+
 /* Fondo pagina WEB */
 header {
-    background-color: #000000;
-    color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
 }
 
-/* CABECERA */
+/* Contenedor de logos del encabezado */
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 0.5%;
+}
 
 /* Logos del encabezado */
 .logo img {
-    width: 50px;
+    width: 35%;
     height: auto;
+}
+
+/* Contenedor de botones de direccionamientos a los contenedores de contacto, productos y redes sociales */
+header nav {
+    width: 600%;
+    display: flex;
+    justify-content: center;
 }
 
 /* botones de direccionamientos a los contenedores */
@@ -34,10 +46,10 @@ header nav a {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
     border: none;
-    padding: 8px 16px;
-    margin: 0 5px;
+    padding: 1% 2%;
+    margin: 0 0.5%;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 100%;
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
@@ -93,93 +105,32 @@ header nav a:hover {
     font-size: 400%;
 }
 
-/* producto portico */
-#portico {
-    text-align: center;
-    background-color: #1b1b1b;
-    border-radius: 5%;
-    margin: 0%;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+.todos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    width: 100%;
+    padding-right: 40px;
 }
 
-/* producto pulls */
-#pulls {
-    display: inline-block;
-    text-align: center;
-    background-color: #1b1b1b;
-    border-radius: 5%;
-    margin: 5%;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
-}
-
-/* producto pulls fijos */
-#pullsFijos {
-    text-align: center;
-    background-color: #1b1b1b;
-    border-radius: 5%;
-    margin: 0%;
-    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
-}
-
-/* producto paralelas */
-#paralelas {
-    display: inline-block;
+.todos div {
+    height: 550px;
     text-align: center;
     background-color: #1b1b1b;
     border-radius: 5%;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+    margin: 0px 0px 80px 60px;
+    padding: 0% 20px 0px 20px;
 }
 
-/* contenedor con los dos primeros productos */
-#primerEspacio {
-    display: flex;
-    align-items: center;
-    margin-left: 3%;
+.todos img {
+    max-width: 80%;
+    max-height: 80%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
 
-/* imagenes del contenedor con los dos primeros productos */
-#primerEspacio img{
-    width: 600px;
-    height: auto;
-    margin: 20px;
-}
-
-/* hover imagenes del contenedor con los dos primeros productos */
-#primerEspacio img:hover{
-    transition: transform 0.5s ease;
-    transform: rotate(360deg);
-}
-
-/* especificacion de tamaño por que las imagenes no son iguales */
-#pulls img{
-    width: 585px;
-    height: auto;
-    margin: 20px;
-}
-
-/* especificacion de tamaño por que las imagenes no son iguales */
-#paralelas {
-    margin: 2.5%;
-}
-
-/* contenedor con los productos 3º y 4º */
-#segundoEspacio {
-    display: flex;
-    align-items: center;
-    margin-left: 3%;
-}
-
-/* imagenes del contenedor con los productos 3º y 4º */
-#segundoEspacio img{
-    width: 600px;
-    height: auto;
-    margin: 20px;
-}
-
-/* hover de las imagenes del contenedor con los productos 3º y 4º */
-#segundoEspacio img:hover{
-    transition: transform 0.5s ease;
-    transform: rotate(360deg);
+.todos img:hover {
+    transform: rotateY(180deg); /* Realiza la rotación horizontal al pasar el mouse */
 }
 
 /* CONTACTO */
@@ -187,6 +138,7 @@ header nav a:hover {
 /* estilos de la informacion del contacto */
 #contacto {
     background-color: rgb(41, 41, 41);
+    height: 100px;
 }
 
 /* REDES SOCIALES */
@@ -209,11 +161,6 @@ header nav a:hover {
 /* estilo del ancla para la red social */
 #redes-sociales a{
     text-decoration: none;
-}
-
-/* espacio entreel contenido y el contenedor en las "section" */
-section {
-    padding: 21px;
 }
 
 /* ESTILO PARA MOVILES */
@@ -252,6 +199,11 @@ section {
         font-size: 14px;
         border-radius: 25px;
         text-decoration: none;
+    }
+
+    #productos .titulo {
+        font-size: 200%;
+        margin: 20%;
     }
 
     #productosVenta img{
