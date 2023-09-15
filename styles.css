@@ -74,12 +74,6 @@ header nav a:hover {
 
 /* CONTENEDOR DE PRODUCTOS */
 
-/* direccionamiento al catalogo de productos */
-#productosVenta {
-    margin-top: -130px; /* Margen negativo para desplazarte un poco más arriba */
-    padding-top: 130px;
-}
-
 /* imagenes de los productos del catalogo */
 #productosVenta img{
     width: 20%;
