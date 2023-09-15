@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {
     // Inicializa FancyBox
     $('[data-fancybox="gallery"]').fancybox({
@@ -14,3 +15,6 @@ $(document).ready(function() {
         keyboard: true // Habilita la navegación con el teclado
     });
 });
+=======
+
+>>>>>>> 3157d18453f3f0dab8ec8f2593dbf6fc2c10ade3
