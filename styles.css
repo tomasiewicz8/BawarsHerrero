@@ -44,7 +44,7 @@ header nav {
 }
 
 /* botones de direccionamientos a los contenedores */
-header nav a {
+.boton {
     background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
     border: none;
@@ -58,8 +58,9 @@ header nav a {
 }
 
 /* hover de los botones */
-header nav a:hover {
+.boton:hover {
     background-color: #96fd8d;
+    color: black;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 3); /* Agrega una sombra */
 }
 
@@ -101,31 +102,32 @@ header nav a:hover {
     font-size: 400%;
 }
 
-.todos {
+.cajasProductos {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(33%,1fr));
     width: 100%;
-    padding-right: 40px;
 }
 
-.todos div {
-    height: 550px;
-    text-align: center;
+.cajasProductos div {
     background-color: #1b1b1b;
     border-radius: 5%;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
-    margin: 0px 0px 80px 60px;
-    padding: 0% 20px 0px 20px;
+    padding: 4%;
+    margin: 2% 4% 2% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
 }
 
-.todos img {
+.cajasProductos img {
     max-width: 80%;
     max-height: 80%;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
 
-.todos img:hover {
+.cajasProductos img:hover {
     transform: rotateY(180deg); /* Realiza la rotación horizontal al pasar el mouse */
 }
 
