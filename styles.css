@@ -13,6 +13,8 @@ body {
 
 
 
+
+
 /* CABECERA */
 
 /* Fondo pagina WEB */
@@ -64,6 +66,10 @@ header nav {
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 3); /* Agrega una sombra */
 }
 
+
+
+
+
 /*PORTADA*/
 
 /* Portada */
@@ -75,7 +81,24 @@ header nav {
     min-height: 100vh;
 }
 
+
+
+
+
 /* CONTENEDOR DE PRODUCTOS */
+
+/* titulo */
+.titulo {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 40.0);
+    font-size: 400%;
+}
+
+/* contenedor de los productos del catalogo */
+#productosVenta {
+    width: 90%;
+    margin-left: 5%;
+}
 
 /* imagenes de los productos del catalogo */
 #productosVenta img{
@@ -89,9 +112,12 @@ header nav {
 /* hover imagenes de los productos del catalogo */
 #productosVenta img:hover {
     border: 2px solid #66ff4b;
-    transform: scale(2);
+    transform: scale(1.8);
     transform-origin: center center;
 }
+
+
+
 
 /* INFORMACION DE CADA PRODUCTO */
 
@@ -102,24 +128,27 @@ header nav {
     font-size: 400%;
 }
 
+/* Contenedor de todos los productos*/
 .cajasProductos {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(33%,1fr));
     width: 100%;
 }
 
+/* Contenedor de cada uno de los productos */
 .cajasProductos div {
     background-color: #1b1b1b;
     border-radius: 5%;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
     padding: 4%;
-    margin: 2% 4% 2% 0%;
+    margin: 2% 8% 10% 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2%;
 }
 
+/* Imagen de todos los producto */
 .cajasProductos img {
     max-width: 80%;
     max-height: 80%;
@@ -127,16 +156,24 @@ header nav {
     transition: transform 1s;
 }
 
+/* Hover de todas las imagenes de los producto */
 .cajasProductos img:hover {
     transform: rotateY(180deg); /* Realiza la rotación horizontal al pasar el mouse */
 }
 
-/* Carrusel de imagenes */
+/* Estilo de los textos de cada producto */
+.cajasProductos div p{
+    padding: 4%;
+}
+
+
+
+
+/* CARRUSEL DE IMAGENES */
 
 /* Tmaño del contenedor */
 .carousel-inner {
     width: 100%;
-    height: auto;
 }
 
 
@@ -151,6 +188,10 @@ header nav {
     background-color: rgb(41, 41, 41);
     height: 100px;
 }
+
+
+
+
 
 /* REDES SOCIALES */
 
@@ -173,6 +214,10 @@ header nav {
 #redes-sociales a{
     text-decoration: none;
 }
+
+
+
+
 
 /* ESTILO PARA MOVILES */
 
