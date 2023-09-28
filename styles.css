@@ -177,7 +177,10 @@ header nav {
     padding: 10%;
 }
 
-
+.carousel-inner img{
+    border: 5px solid rgb(252, 252, 252)!important;
+    box-shadow: 20px 20px 40px rgba(255, 255, 255, 0.2) !important;
+}
 
 
 
