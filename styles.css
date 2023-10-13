@@ -5,6 +5,7 @@
 
 body {
     font-family: Caladea, Arial, sans-serif;
+    width: 100%;
     margin: 0;
     padding: 0%;
     background: #000000 50%;
@@ -38,10 +39,19 @@ header {
     height: auto;
 }
 
+.desplegable {
+    display: none;
+}
+
 /* Contenedor de botones de direccionamientos a los contenedores de contacto, productos y redes sociales */
-header nav {
+.menu_movil {
     width: 600%;
+}
+
+.menu_ordenador {
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -53,7 +63,7 @@ header nav {
     padding: 1% 2%;
     margin: 0 0.5%;
     cursor: pointer;
-    font-size: 100%;
+    font-size: 80%;
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
@@ -87,6 +97,12 @@ header nav {
 
 /* CONTENEDOR DE PRODUCTOS */
 
+.pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* titulo */
 .titulo {
     text-align: center;
@@ -97,7 +113,6 @@ header nav {
 /* contenedor de los productos del catalogo */
 #productosVenta {
     width: 90%;
-    margin-left: 5%;
 }
 
 /* imagenes de los productos del catalogo */
@@ -172,13 +187,18 @@ header nav {
 /* CARRUSEL DE IMAGENES */
 
 /* Tmaño del contenedor */
+#carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+}
+
 .carousel-inner {
-    width: 100%;
-    padding: 10%;
+    width: 70%;
+    padding: 5%;
 }
 
 .carousel-inner img{
-    border: 5px solid rgb(252, 252, 252)!important;
+    border: 5px solid rgb(64, 64, 64)!important;
     box-shadow: 20px 20px 40px rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -227,17 +247,23 @@ header nav {
 
 @media (max-width: 768px) {
 
-    .portada {
-        background-image: url('https://i.postimg.cc/LsmJz31y/16113051144409-recortado.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 100vh;
+    .boton {
+        background-color: hsl(0, 0%, 100%);
+        color: rgb(0, 0, 0);
+        border: none;
+        padding: 1% 2%;
+        margin: 0 0.5%;
+        cursor: pointer;
+        font-size: 50%;
+        border-radius: 25%;
+        text-decoration: none;
+        box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
     }
 
     .logo img {
         width: 25px;
         height: auto;
+        margin: 10%;
     }
 
     .logo {
@@ -247,6 +273,24 @@ header nav {
     .logo:first-child,
     .logo:last-child {
         display: block; /* Mostrar solo el primer y último logo */
+    }
+
+    .menu_movil {
+        display: flex;
+        justify-content: center;
+    }
+
+    #desplegable{
+        display: block;
+        width: 15%;
+    }
+
+    .menu_movil button {
+        background-color: none;
+    }
+
+    .menu_ordenador {
+        display: none;
     }
 
     header nav a {
@@ -261,63 +305,28 @@ header nav {
         text-decoration: none;
     }
 
+    #productosVenta img{
+        width: 28%;
+        height: auto;
+        margin: 2.3%;
+        transition: all 0.3s;
+        border-radius: 50%;
+    }
+
+    #productosVenta .titulo{
+        font-size: 200%;
+    }
+
     #productos .titulo {
         font-size: 200%;
-        margin: 20%;
+        margin: 5%;
     }
 
-    #productosVenta img{
-        margin: 2.0%;
-    }
-
-    #primerEspacio {
+    .cajasProductos {
+        display: flex;
         flex-direction: column;
-    }
-
-    #segundoEspacio {
-        flex-direction: column;
-    }
-
-    #portico {
-        scroll-margin-top: 30px;
-        margin-top: -30px;
-    }
-
-    #portico img{
-        width: 300px;
-        height: auto;
-    }
-
-    #pulls {
-        scroll-margin-top: 30px;
-        margin-top: 50px;
-        margin-left: -2px;
-        margin-bottom: 50px;
-    }
-
-    #pulls img{
-        width: 300px;
-        height: auto;
-    }
-
-    #pullsFijos {
-        scroll-margin-top: 30px;
-        margin-bottom: 50px;
-    }
-
-    #pullsFijos img{
-        width: 300px;
-        height: auto;
-    }
-
-    #paralelas {
-        scroll-margin-top: 30px;
-        margin-bottom: 40px;
-    }
-
-    #paralelas img{
-        width: 300px;
-        height: auto;
+        margin-left: 3%;
+        width: 100%;
     }
 
     section {
