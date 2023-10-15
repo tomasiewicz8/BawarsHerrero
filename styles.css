@@ -39,7 +39,7 @@ header {
     height: auto;
 }
 
-.desplegable {
+#desplegable {
     display: none;
 }
 
@@ -281,12 +281,16 @@ header {
     }
 
     #desplegable{
+        background: initial;
         display: block;
         width: 15%;
     }
 
     .menu_movil button {
         background-color: none;
+        border-radius: 25%;
+        border: none;
+        color: none;
     }
 
     .menu_ordenador {
