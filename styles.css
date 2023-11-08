@@ -5,6 +5,7 @@
 
 body {
     font-family: Caladea, Arial, sans-serif;
+    font-weight: bold;
     width: 100%;
     margin: 0;
     padding: 0%;
@@ -18,10 +19,20 @@ body {
 
 /* CABECERA */
 
+/* Portada */
+.portada {
+    background-image: url('https://i.postimg.cc/zGH281gM/16113051144409.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
 /* Fondo pagina WEB */
-header {
+header .menu{
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.529);
 }
 
 /* Contenedor de logos del encabezado */
@@ -39,6 +50,7 @@ header {
     height: auto;
 }
 
+/* Icono que remplaza los botones para movil */
 #desplegable {
     display: none;
 }
@@ -48,6 +60,7 @@ header {
     width: 600%;
 }
 
+/* Botones */
 .menu_ordenador {
     width: 100%;
     display: flex;
@@ -57,40 +70,24 @@ header {
 
 /* botones de direccionamientos a los contenedores */
 .boton {
-    background-color: hsl(0, 0%, 100%);
-    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.519);
+    color: white;
     border: none;
     padding: 1% 2%;
     margin: 0 0.5%;
     cursor: pointer;
-    font-size: 80%;
+    font-size: 120%;
     border-radius: 25px;
     text-decoration: none;
-    box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 1); /* Agrega una sombra */
 }
 
 /* hover de los botones */
 .boton:hover {
-    background-color: #96fd8d;
+    background-color: white;
     color: black;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 3); /* Agrega una sombra */
 }
-
-
-
-
-
-/*PORTADA*/
-
-/* Portada */
-.portada {
-    background-image: url('https://i.postimg.cc/zGH281gM/16113051144409.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
 
 
 
@@ -126,7 +123,8 @@ header {
 
 /* hover imagenes de los productos del catalogo */
 #productosVenta img:hover {
-    border: 2px solid #66ff4b;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 4px 8px rgb(255, 255, 255);
     transform: scale(1.8);
     transform-origin: center center;
 }
@@ -211,6 +209,11 @@ header {
 #contacto {
     background-color: rgb(41, 41, 41);
     padding: 2%;
+}
+
+#contacto img{
+    width: 25px;
+    height: auto;
 }
 
 
