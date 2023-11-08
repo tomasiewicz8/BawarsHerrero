@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Caladea, Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', 'Roboto';
     font-weight: bold;
     width: 100%;
     margin: 0;
@@ -36,17 +36,25 @@ header .menu{
 }
 
 /* Contenedor de logos del encabezado */
-.logo {
+.logo2 {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 120%;
     height: auto;
     margin: 0.5%;
 }
 
 /* Logos del encabezado */
-.logo img {
-    width: 35%;
+.logo1 img {
+    margin-left: 100%;
+    padding: 5%;
+    width: 70%;
+    height: auto;
+}
+
+.logo2 img {
+    margin-right: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -76,7 +84,7 @@ header .menu{
     padding: 1% 2%;
     margin: 0 0.5%;
     cursor: pointer;
-    font-size: 120%;
+    font-size: 80%;
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 1); /* Agrega una sombra */
@@ -103,8 +111,9 @@ header .menu{
 /* titulo */
 .titulo {
     text-align: center;
+    margin-top: 5%;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 40.0);
-    font-size: 400%;
+    font-size: 300%;
 }
 
 /* contenedor de los productos del catalogo */
@@ -112,12 +121,17 @@ header .menu{
     width: 90%;
 }
 
+.productosVentas {
+    margin-left: 4%;
+}
+
 /* imagenes de los productos del catalogo */
 #productosVenta img{
-    width: 20%;
+    width: 25%;
     height: auto;
-    margin: 2.3%;
+    margin: 3%;
     transition: all 0.3s;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
 }
 
@@ -138,7 +152,7 @@ header .menu{
 #productos .titulo {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 40.0);
-    font-size: 400%;
+    font-size: 300%;
 }
 
 /* Contenedor de todos los productos*/
@@ -146,6 +160,7 @@ header .menu{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(33%,1fr));
     width: 100%;
+    padding-left: 2%;
 }
 
 /* Contenedor de cada uno de los productos */
@@ -165,6 +180,8 @@ header .menu{
 .cajasProductos img {
     max-width: 80%;
     max-height: 80%;
+    border: 1px solid white;
+    border-radius: 50%;
     transform-style: preserve-3d;
     transition: transform 1s;
 }
