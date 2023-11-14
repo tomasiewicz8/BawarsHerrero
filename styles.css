@@ -171,6 +171,7 @@ header .menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin-top: 85px;
 }
 
 /* Imagen de todos los producto */
@@ -181,6 +182,7 @@ header .menu{
     border-radius: 50%;
     transform-style: preserve-3d;
     transition: transform 1s;
+    margin-bottom: 3%;
 }
 
 /* Hover de todas las imagenes de los producto */
@@ -189,7 +191,7 @@ header .menu{
     transition: all 2s;
 }
 
-/* Estilo de los textos de cada producto */
+/* padding de los contenedores */
 .cajasProductos div p{
     padding: 4%;
 }
@@ -203,6 +205,7 @@ header .menu{
 #carouselExampleIndicators {
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 .carousel-inner {
@@ -250,9 +253,9 @@ header .menu{
 
 /* imagenes de la informacion de las redes sociales */
 #redes-sociales img {
-    width: 20px;
+    width: 2%;
     height: auto;
-    vertical-align: middle;
+    vertical-align: -4px;
 }
 
 /* estilo del ancla para la red social */
