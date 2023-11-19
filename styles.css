@@ -31,17 +31,16 @@ body {
 /* Encabezado */
 header .menu{
     display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.529);
 }
 
-/* menu desplegable */
-header .menu {
-    display: grid;
-}
-
-
 /* Contenedor de logos del encabezado */
-
+.logos img {
+    width: auto;
+    height: auto;
+}
 
 /* Logos del encabezado */
 
