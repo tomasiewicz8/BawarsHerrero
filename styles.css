@@ -28,35 +28,23 @@ body {
     min-height: 100vh;
 }
 
-/* Fondo pagina WEB */
+/* Encabezado */
 header .menu{
-    display: flex;
-    align-items: center;
+    display: grid;
     border-bottom: 1px solid rgba(255, 255, 255, 0.529);
 }
 
-/* Contenedor de logos del encabezado */
-.logo2 {
-    display: flex;
-    justify-content: center;
-    width: 120%;
-    height: auto;
-    margin: 0.5%;
+/* menu desplegable */
+header .menu {
+    display: grid;
 }
+
+
+/* Contenedor de logos del encabezado */
+
 
 /* Logos del encabezado */
-.logo1 img {
-    margin-left: 50%;
-    padding: 5%;
-    width: 70%;
-    height: auto;
-}
 
-.logo2 img {
-    margin-right: 50%;
-    width: 80%;
-    height: auto;
-}
 
 /* Icono que remplaza los botones para movil */
 #desplegable {
@@ -65,7 +53,7 @@ header .menu{
 
 /* Contenedor de botones de direccionamientos a los contenedores de contacto, productos y redes sociales */
 .menu_movil {
-    width: 600%;
+    width: 60%;
 }
 
 /* Botones */
@@ -275,37 +263,14 @@ header .menu{
 
 @media (max-width: 768px) {
 
-    .boton {
-        background-color: hsl(0, 0%, 100%);
-        color: rgb(0, 0, 0);
-        border: none;
-        padding: 1% 2%;
-        margin: 0 0.5%;
-        cursor: pointer;
-        font-size: 50%;
-        border-radius: 25%;
-        text-decoration: none;
-        box-shadow: 0px 2px 4px rgba(255, 255, 255, 1); /* Agrega una sombra */
-    }
-
-    .logo img {
-        width: 25px;
-        height: auto;
-        margin: 10%;
-    }
-
-    .logo {
-        display: none; /* Ocultar todos los logos */
-    }
-
-    .logo:first-child,
-    .logo:last-child {
-        display: block; /* Mostrar solo el primer y último logo */
+    .portada {
+        background-position: 10%;
     }
 
     .menu_movil {
         display: flex;
         justify-content: center;
+        width: 600%;
     }
 
     #desplegable{
@@ -314,11 +279,31 @@ header .menu{
         width: 15%;
     }
 
+    .logos {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .logo {
+        width: 150%;
+        height: auto;
+    }
+
+    .logo2 {
+        width: 200%;
+        height: auto;
+    }
+
+    .logos img{
+        width: 100%;
+    }
+
     .menu_movil button {
         background-color: none;
         border-radius: 25%;
         border: none;
         color: none;
+        width: 10px;
     }
 
     .menu_ordenador {
@@ -326,7 +311,7 @@ header .menu{
     }
 
     header nav a {
-        background-color: hsl(0, 0%, 100%);
+        background-color: hsl(0, 87%, 48%);
         color: rgb(0, 0, 0);
         border: none;
         padding: 2px 4px;
