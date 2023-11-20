@@ -31,19 +31,31 @@ body {
 /* Encabezado */
 header .menu{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.529);
+    padding: 1%;
 }
 
 /* Contenedor de logos del encabezado */
-.logos img {
-    width: auto;
-    height: auto;
+.logo1 {
+    width: 25%;
+}
+
+.logo2 {
+    width: 70%;
 }
 
 /* Logos del encabezado */
+.logo1 img {
+    width: 100%;
+    height: auto;
+}
 
+.logo2 img {
+    width: 100%;
+    height: auto;
+}
 
 /* Icono que remplaza los botones para movil */
 #desplegable {
@@ -52,16 +64,18 @@ header .menu{
 
 /* Contenedor de botones de direccionamientos a los contenedores de contacto, productos y redes sociales */
 .menu_movil {
-    width: 60%;
+    width: 100%;
+    margin: 0% 0%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Botones */
 .menu_ordenador {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin: 0% 5% 0% 5%;
+    
 }
 
 /* botones de direccionamientos a los contenedores */
@@ -72,14 +86,10 @@ header .menu{
     border: none;
     padding: 0.5% 1%;
     margin: 0 0.5%;
-    cursor: pointer;
-    font-size: 100%;
+    font-size: 130%;
     border-radius: 25px;
     text-decoration: none;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 1); /* Agrega una sombra */
-}
-.contacto {
-    margin: 0% 20% 0% 0%;
 }
 
 /* hover de los botones */
