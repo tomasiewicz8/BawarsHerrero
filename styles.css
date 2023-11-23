@@ -38,7 +38,6 @@ header .menu{
 }
 
 /* Contenedor de logos del encabezado */
-
 .logo {
     width: 120px;
 }
@@ -57,7 +56,6 @@ header .menu{
 /* Contenedor de botones de direccionamientos a los contenedores de contacto, productos y redes sociales */
 .menu_movil {
     width: 100%;
-    height: 30px;
     display: flex;
     align-items: center;
 }
@@ -74,7 +72,6 @@ header .menu{
     background-color: rgba(0, 0, 0, 0.519);
     transition: all 0.8s;
     color: white;
-    border: none;
     padding: 1% 2%;
     margin: 0% 1%;
     font-size: 110%;
@@ -99,6 +96,8 @@ header .menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20%; /* ERROR */
 }
 
 /* titulo */
@@ -112,16 +111,29 @@ header .menu{
 /* contenedor de los productos del catalogo */
 #productosVenta {
     width: 90%;
+    display: flex;
+    flex-direction: column;
 }
+
+.productosVentas {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 30% 30% 30% 30%;
+    place-items: center;
+}
+
+
 
 /* imagenes de los productos del catalogo */
 #productosVenta img{
-    width: 27%;
-    height: auto;
-    margin: 3%;
+    width: 100%;
     transition: all 0.3s;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
+}
+
+#productosVenta a {
+    padding: 9%;
 }
 
 /* hover imagenes de los productos del catalogo */
