@@ -1,24 +1,24 @@
 $(document).ready(function() {
-    // Inicializa FancyBox
-    $('[data-fancybox="gallery"]').fancybox({
-        buttons: [
-            "zoom",
-            "share",
-            "slideShow",
-            "fullScreen",
-            "download",
-            "thumbs",
-            "close"
-        ],
-        loop: true, // Permite la navegación en bucle
-        keyboard: true // Habilita la navegación con el teclado
-    });
+    // Verificar si el elemento existe antes de agregar el evento click
+    var elemento = $('#tuElemento');
+    if (elemento.length > 0) {
+        elemento.on('click', function() {
+            // Tu lógica aquí
+        });
+    }
+
+    // Verificar si FancyBox está definido antes de usarlo
+    if (typeof $.fancybox === 'function') {
+        // Lógica relacionada con FancyBox aquí
+        // Por ejemplo: $('selector').fancybox();
+    }
 });
 
-document.getElementById("desplegable").addEventListener("click", function() {
-    var menu_ordenador = document.querySelector(".menu_ordenador");
-    console.log("Botón de menú clicado");
-    menu_ordenador.classList.toggle("visible");
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("desplegable").addEventListener("click", function() {
+        var menu_ordenador = document.querySelector(".menu_ordenador");
+        menu_ordenador.classList.toggle("visible");
+    });
 });
 
   

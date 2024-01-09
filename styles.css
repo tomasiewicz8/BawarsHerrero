@@ -320,6 +320,9 @@ header .menu{
     
     .menu_ordenador.visible {
         display: block;
+        padding: 40%;
+        display: flex;
+        flex-direction: column;
     }
     
 
