@@ -282,7 +282,7 @@ header .menu{
     .menu_movil {
         display: flex;
         justify-content: center;
-        width: 600%;
+        width: 400%;
     }
 
     #desplegable{
@@ -291,23 +291,19 @@ header .menu{
         width: 15%;
     }
 
-    .logos {
-        width: 100%;
-        padding: 3%;
+    header .menu #firma {
+        margin-right: 70%; /* Ajusta el espacio a la derecha según tus necesidades */
+    }
+
+    #desplegable .logo {
+        width: 50%;
+        height: auto;
+        padding: 10%;
     }
 
     .logo {
         width: 150%;
         height: auto;
-    }
-
-    .logo2 {
-        width: 200%;
-        height: auto;
-    }
-
-    .logos img{
-        width: 100%;
     }
 
     .menu_movil button {
@@ -321,26 +317,11 @@ header .menu{
     .menu_ordenador {
         display: none;
     }
-
-    header nav a {
-        background-color: hsl(0, 87%, 48%);
-        color: rgb(0, 0, 0);
-        border: none;
-        padding: 2px 4px;
-        margin: 0 5px;
-        cursor: pointer;
-        font-size: 14px;
-        border-radius: 25px;
-        text-decoration: none;
+    
+    .menu_ordenador.visible {
+        display: block;
     }
-
-    #productosVenta img{
-        width: 28%;
-        height: auto;
-        margin: 2.3%;
-        transition: all 0.3s;
-        border-radius: 50%;
-    }
+    
 
     #productosVenta .titulo{
         font-size: 200%;
@@ -348,13 +329,13 @@ header .menu{
 
     #productos .titulo {
         font-size: 200%;
-        margin: 5%;
+        margin: 30% 5% 10% 5%;
     }
 
     .cajasProductos {
         display: flex;
         flex-direction: column;
-        margin-left: 3%;
+        margin-left: 8%;
         width: 100%;
     }
 
@@ -365,4 +346,4 @@ header .menu{
 
 }
 
-/* Otros estilos específicos según tus necesidades */
+

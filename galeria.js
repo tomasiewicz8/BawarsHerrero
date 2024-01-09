@@ -17,10 +17,8 @@ $(document).ready(function() {
 
 document.getElementById("desplegable").addEventListener("click", function() {
     var menu_ordenador = document.querySelector(".menu_ordenador");
-    if (menu_ordenador.style.display === "block") {
-      menu_ordenador.style.display = "none";
-    } else {
-        menu_ordenador.style.display = "block";
-    }
-  });
+    console.log("Botón de menú clicado");
+    menu_ordenador.classList.toggle("visible");
+});
+
   
