@@ -14,11 +14,12 @@ $(document).ready(function() {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("desplegable").addEventListener("click", function() {
-        var menu_ordenador = document.querySelector(".menu_ordenador");
-        menu_ordenador.classList.toggle("visible");
-    });
-});
+var menuDesplegable = document.querySelector('.menu_ordenador');
+var desplegable = document.querySelector('.desplegable');
+
+desplegable.addEventListener('click', ()=> {
+    menuDesplegable.classList.toggle("visible");
+})
+
 
   
