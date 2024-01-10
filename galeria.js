@@ -14,8 +14,8 @@ $(document).ready(function() {
     }
 });
 
-var menuDesplegable = document.querySelector('.menu_ordenador');
-var desplegable = document.querySelector('.desplegable');
+const menuDesplegable = document.querySelector('.menu_ordenador');
+const desplegable = document.getElementById('desplegable');
 
 desplegable.addEventListener('click', ()=> {
     menuDesplegable.classList.toggle("visible");
