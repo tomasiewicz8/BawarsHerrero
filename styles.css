@@ -32,20 +32,21 @@ body {
 header .menu{
     display: grid;
     grid-template-columns: 15% 70% 15%;
-    grid-template-rows: 60px;
+    grid-template-rows: 90px;
     place-items: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.529);
 }
 
 /* Contenedor de logos del encabezado */
 .logo {
-    width: 120px;
+    height: 97%;
+    padding: 3%;
 }
 
 /* Logos del encabezado */
 .logo img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
 }
 
 /* Icono que remplaza los botones para movil */
@@ -160,8 +161,7 @@ header .menu{
 .cajasProductos {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(33%,1fr));
-    width: 90%;
-    margin: 5%;
+    padding: 5%;
 }
 
 /* Contenedor de cada uno de los productos */
@@ -169,8 +169,8 @@ header .menu{
     background-color: #1b1b1b;
     border-radius: 5%;
     box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.2);
+    margin: 10%;
     padding: 4%;
-    margin: 2% 18% 20% 0%;
     border: 0.1px solid rgba(255, 255, 255, 0.449);
     display: flex;
     flex-direction: column;
@@ -282,30 +282,25 @@ header .menu{
     #desplegable{
         background: initial;
         display: block;
-        width: 15%;
-    }
-
-    header .menu #firma {
-        margin-right: 70%; /* Ajusta el espacio a la derecha según tus necesidades */
-    }
-
-    #desplegable .logo {
-        width: 50%;
-        height: auto;
-        padding: 10%;
+        height: 80%;
+        display: flex;
+        align-items: center;
     }
 
     .logo {
-        width: 150%;
-        height: auto;
+        height: 50%;
     }
 
-    .menu_movil button {
-        background-color: none;
-        border-radius: 25%;
-        border: none;
-        color: none;
-        width: 10px;
+    header .menu{
+        display: grid;
+        grid-template-columns: 15% 50% 35%;
+        grid-template-rows: 90px;
+    }
+
+    .menu_movil {
+        display: flex;
+        justify-content: center;
+        height: 100%;
     }
 
     .menu_ordenador {
@@ -313,6 +308,7 @@ header .menu{
     }
     
     .menu_ordenador.visible {
+        background-color: rgba(0, 0, 0, 0.519);
         display: block;
         padding: 10% 20%;
         display: flex;
@@ -320,6 +316,18 @@ header .menu{
         position: absolute;
         top: 50px;
         right: 10px;
+    }
+
+    ##boton {
+        background-color: rgba(0, 0, 0, 0.519);
+        transition: color 0.2s, box-shadow 1s;
+        color: white;
+        padding: 1% 2%;
+        margin: 0% 1%;
+        font-size: 110%;
+        border-radius: 25px;
+        text-decoration: none;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 1); /* Agrega una sombra */
     }
     
 
@@ -335,7 +343,6 @@ header .menu{
     .cajasProductos {
         display: flex;
         flex-direction: column;
-        margin-left: 8%;
         width: 100%;
     }
 
